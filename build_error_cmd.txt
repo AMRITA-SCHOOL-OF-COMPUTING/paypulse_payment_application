@@ -1,0 +1,18 @@
+Running Gradle task 'assembleDebug'...                          
+Your project is configured with Android NDK 27.0.12077973, but the following plugin(s) depend on a different Android NDK version:
+- speech_to_text requires Android NDK 28.2.13676358
+Fix this issue by using the highest Android NDK version (they are backward compatible).
+Add the following to C:\Users\sripr\rd\flutter_application_1\android\app\build.gradle.kts:
+
+    android {
+        ndkVersion = "28.2.13676358"
+        ...
+    }
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\Users\sripr\AppData\Local\Pub\Cache\hosted\pub.dev\card_scanner-1.0.2\android\src\main\java\com\nateshmbhat\card_scanner\CardScannerPlugin.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\Users\sripr\AppData\Local\Pub\Cache\hosted\pub.dev\card_scanner-1.0.2\android\src\main\java\com\nateshmbhat\card_scanner\CardScannerPlugin.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Running Gradle task 'assembleDebug'...                            220.0s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
